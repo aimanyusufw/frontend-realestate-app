@@ -1,13 +1,11 @@
-"use client";
+import NotFound from "@/components/ui/NotFound";
 
-export default function NotFound() {
+export default function NotFoundPage() {
   return (
     <>
       <section className="h-screen">
         <div className="container">
-          <div className="w-full h-full flex justify-center items-center px-2">
-            <h1>Not Found</h1>
-          </div>
+          <NotFound />
         </div>
       </section>
     </>

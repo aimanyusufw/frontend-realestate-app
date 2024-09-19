@@ -1,5 +1,5 @@
 import { Link } from "@/i18n/routing";
-import { formatRupiah } from "@/libs/rupiahFormat";
+import { formatRupiahClientComp } from "@/libs/rupiahFormat";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
@@ -31,7 +31,7 @@ const Property = ({ data }) => {
           <span className="ms-2">{data.location.name}</span>
         </div>
         <h1 className="font-bold text-xl md:text-2xl mb-3">
-          {formatRupiah(data.price.int)}
+          {formatRupiahClientComp(data.price.int)}
         </h1>
         <Link href={`/properties/${data.slug}`}>
           <h2 className="font-semibold text-2xl md:text-3xl mb-2 truncate">

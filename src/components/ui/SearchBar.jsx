@@ -22,14 +22,14 @@ const SearchBar = ({ filters, setFilters }) => {
   };
 
   return (
-    <div className="border w-full md:w-auto items-center border-slate-500 flex rounded-full overflow-hidden">
+    <div className="border relative items-center border-slate-500 flex rounded-full overflow-hidden">
       <input
         type="text"
         ref={searchRef}
         onKeyDown={handleSearch}
         className="rounded-s-full w-full h-full ps-4 py-3"
       />
-      <button className="px-5 h-full bg-dark-green">
+      <button className="px-5 py-3 h-full bg-dark-green">
         <FiSearch className="text-white" />
       </button>
     </div>

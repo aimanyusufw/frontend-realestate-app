@@ -8,6 +8,11 @@ import NextTopLoader from "nextjs-toploader";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const metadata = {
+  title: "Horzon Homes | Realestate app",
+  description: "App to discover properties",
+};
+
 export default async function LocaleLayout({ children, params: { locale } }) {
   const messages = await getMessages();
 
