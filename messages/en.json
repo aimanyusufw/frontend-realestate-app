@@ -1,0 +1,84 @@
+{
+  "menu": {
+    "home": "Home",
+    "properties": "Properties",
+    "agents": "Agents",
+    "favorite": "Favorites"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, id {🇮🇩 Indonesia} en {🇺🇸 English} other {Unknown}}"
+  },
+  "heroSection": {
+    "subHeading": "Start Your Journey Here!",
+    "heading": "Find your dream property effortlessly with",
+    "description": "Horizon Homes simplifies your property search with fast and reliable service.",
+    "button": "Explore Now",
+    "subButton": "Trusted by"
+  },
+  "serviceSection": {
+    "heading": "Our Services",
+    "description": "We are dedicated to offering outstanding real estate services with a variety of benefits that elevate your experience. Discover why we are the top choice for your property needs.",
+    "statistics": {
+      "trustedBy": {
+        "title": "Trusted by",
+        "value": "1,200+"
+      },
+      "propertiesSold": {
+        "title": "Properties Sold",
+        "value": "3,500+"
+      }
+    },
+    "services": {
+      "bestPrice": {
+        "title": "Best Price"
+      },
+      "expertAdvice": {
+        "title": "Expert Advice"
+      },
+      "personalizedService": {
+        "title": "Personalized Service"
+      }
+    },
+    "accordionItems": {
+      "bestPrice": {
+        "title": "Best Price",
+        "content": "We offer the most competitive prices in the market, ensuring that you get the best deal for your budget. Whether you're buying or selling, our team will negotiate the best terms for you."
+      },
+      "expertAdvice": {
+        "title": "Expert Advice",
+        "content": "Our team consists of experienced real estate agents who are ready to guide you through every step of your property journey, from finding the right location to finalizing the deal."
+      },
+      "personalizedService": {
+        "title": "Personalized Service",
+        "content": "We customize our services to fit your individual needs, making sure your experience with us is smooth and effortless. Your satisfaction is our top priority."
+      },
+      "support": {
+        "title": "24/7 Support",
+        "content": "We offer round-the-clock support to assist you with any questions or issues. Whether you need advice on properties or help with paperwork, our team is always available to assist."
+      }
+    }
+  },
+  "property": {
+    "bedroom": "Bedroom",
+    "bathroom": "Bathroom"
+  },
+  "browsePropertySection": {
+    "title": "Browse Properties",
+    "description": "Explore our diverse selection of properties and find the perfect home that suits your needs. Whether you're looking for a cozy apartment or a spacious house, we have options for every taste and budget. Start browsing now to discover your ideal property."
+  },
+  "currency": {
+    "billion": "Billion",
+    "million": "Million",
+    "thousand": "Thousand"
+  },
+  "contactUsSection": {
+    "title": "Finding your perfect property is just a click away!",
+    "description": "Start browsing our property listings today and take the first step towards making your homeownership dreams a reality.",
+    "button": "Contact Us"
+  },
+  "notfound": {
+    "title": "Oops! Data Missing",
+    "description": "We couldn't find what you're looking for. Please double-check your request or try again soon!"
+  }
+}

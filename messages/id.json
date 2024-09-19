@@ -1,0 +1,84 @@
+{
+  "menu": {
+    "home": "Beranda",
+    "properties": "Properti",
+    "agents": "Agent",
+    "favorite": "Favorite"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, id {🇮🇩 Indonesia} en {🇺🇸 English} other {Unknown}}"
+  },
+  "heroSection": {
+    "subHeading": "Mulai Perjalanan Anda di Sini!",
+    "heading": "Temukan properti impian anda dengan mudah bersama",
+    "description": "Horizon Homes memudahkan pencarian properti Anda dengan layanan yang cepat dan andal.",
+    "button": "Jelajahi Sekarang",
+    "subButton": "Dipercaya oleh"
+  },
+  "serviceSection": {
+    "heading": "Layanan Kami",
+    "description": "Kami berdedikasi untuk memberikan layanan properti yang luar biasa dengan berbagai keuntungan yang meningkatkan pengalaman Anda. Temukan mengapa kami adalah pilihan terbaik untuk kebutuhan properti Anda.",
+    "statistics": {
+      "trustedBy": {
+        "title": "Dipercaya oleh",
+        "value": "1.200+"
+      },
+      "propertiesSold": {
+        "title": "Properti Terjual",
+        "value": "3.500+"
+      }
+    },
+    "services": {
+      "bestPrice": {
+        "title": "Harga Terbaik"
+      },
+      "expertAdvice": {
+        "title": "Saran Ahli"
+      },
+      "personalizedService": {
+        "title": "Layanan Personalisasi"
+      }
+    },
+    "accordionItems": {
+      "bestPrice": {
+        "title": "Harga Terbaik",
+        "content": "Kami menawarkan harga yang paling kompetitif di pasar, memastikan Anda mendapatkan penawaran terbaik sesuai anggaran Anda. Baik Anda membeli atau menjual, tim kami akan merundingkan syarat terbaik untuk Anda."
+      },
+      "expertAdvice": {
+        "title": "Saran Ahli",
+        "content": "Tim kami terdiri dari agen properti berpengalaman yang siap membimbing Anda melalui setiap langkah perjalanan properti Anda, mulai dari mencari lokasi yang tepat hingga menyelesaikan transaksi."
+      },
+      "personalizedService": {
+        "title": "Layanan Personalisasi",
+        "content": "Kami menyesuaikan layanan kami untuk memenuhi kebutuhan individu Anda, memastikan pengalaman Anda dengan kami berjalan lancar dan tanpa hambatan. Kepuasan Anda adalah prioritas utama kami."
+      },
+      "support": {
+        "title": "Dukungan 24/7",
+        "content": "Kami menyediakan dukungan sepanjang waktu untuk membantu Anda dengan segala pertanyaan atau masalah. Baik Anda memerlukan saran tentang properti atau bantuan dengan dokumentasi, tim kami selalu siap membantu."
+      }
+    }
+  },
+  "browsePropertySection": {
+    "title": "Jelajahi Properti",
+    "description": "Jelajahi berbagai pilihan properti kami dan temukan rumah ideal yang sesuai dengan kebutuhan Anda. Apakah Anda mencari apartemen yang nyaman atau rumah yang luas, kami memiliki opsi untuk setiap selera dan anggaran. Mulai jelajahi sekarang untuk menemukan properti yang sempurna untuk Anda."
+  },
+  "property": {
+    "bedroom": "Kamar Tidur",
+    "bathroom": "Kamar Mandi"
+  },
+  "currency": {
+    "billion": "Miliar",
+    "million": "Juta",
+    "thousand": "Ribu"
+  },
+  "contactUsSection": {
+    "title": "Menemukan properti ideal Anda hanya dengan satu klik!",
+    "description": "Mulailah menjelajahi daftar properti kami hari ini dan ambil langkah pertama menuju mewujudkan impian kepemilikan rumah Anda.",
+    "button": "Hubungi Kami"
+  },
+  "notfound": {
+    "title": "Oops! Data Tidak Ditemukan",
+    "description": "Kami tidak dapat menemukan apa yang Anda cari. Silakan periksa kembali permintaan Anda atau coba lagi nanti!"
+  }
+}

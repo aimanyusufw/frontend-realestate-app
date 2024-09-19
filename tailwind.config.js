@@ -6,10 +6,19 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "16px",
+    },
+    fontFamily: {
+      playFair: ["Playfair Display", "serif"],
+    },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "dark-green": "#147535",
+      },
+      screens: {
+        "2xl": "1280px",
       },
     },
   },
