@@ -64,8 +64,23 @@
     "description": "Jelajahi berbagai pilihan properti kami dan temukan rumah ideal yang sesuai dengan kebutuhan Anda. Apakah Anda mencari apartemen yang nyaman atau rumah yang luas, kami memiliki opsi untuk setiap selera dan anggaran. Mulai jelajahi sekarang untuk menemukan properti yang sempurna untuk Anda."
   },
   "property": {
-    "bedroom": "Kamar Tidur",
-    "bathroom": "Kamar Mandi"
+    "relatedProperties": "Properti Terkait",
+    "specification": {
+      "title": "Spesifikasi",
+      "bedroom": "Kamar Tidur",
+      "bathroom": "Kamar Mandi",
+      "landArea": "Land Area",
+      "buildingArea": "Building Area",
+      "electricity": "Electricity",
+      "rentPeriod": "Bulan",
+      "pricePerM2": "Price Per M²",
+      "certificate": "Certificate"
+    }
+  },
+  "agent": {
+    "memberSince": "Anggota Sejak",
+    "phone": "Telephone",
+    "email": "Surel"
   },
   "currency": {
     "billion": "Miliar",

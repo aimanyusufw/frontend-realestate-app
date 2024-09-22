@@ -60,8 +60,23 @@
     }
   },
   "property": {
-    "bedroom": "Bedroom",
-    "bathroom": "Bathroom"
+    "relatedProperties": "Related Properties",
+    "specification": {
+      "title": "Specification",
+      "bedroom": "Bedroom",
+      "bathroom": "Bathroom",
+      "landArea": "Land Area",
+      "buildingArea": "Building Area",
+      "electricity": "Electricity",
+      "rentPeriod": "Month",
+      "pricePerM2": "Price Per M²",
+      "certificate": "Certificate"
+    }
+  },
+  "agent": {
+    "memberSince": "Member Since",
+    "phone": "Phone",
+    "email": "Email"
   },
   "browsePropertySection": {
     "title": "Browse Properties",

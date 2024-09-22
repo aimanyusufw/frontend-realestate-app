@@ -7,7 +7,7 @@ import { FaBath, FaBed, FaMapMarked } from "react-icons/fa";
 import { IoIosExpand } from "react-icons/io";
 
 const Property = ({ data }) => {
-  const t = useTranslations("property");
+  const t = useTranslations("property.specification");
 
   return (
     <div className="border rounded-md overflow-hidden">

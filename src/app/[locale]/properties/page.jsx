@@ -72,7 +72,7 @@ const page = () => {
               typeProperties={data.typeProperties}
               loadings={loadings.typeProperties}
             />
-            <div className="flex gap-3 mb-8 md:mb-0">
+            <div className="mb-8 md:mb-0 w-full md:w-auto flex justify-end">
               <SearchBar filters={filters} setFilters={setFilters} />
             </div>
           </div>

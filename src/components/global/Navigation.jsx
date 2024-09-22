@@ -36,7 +36,7 @@ const Navigation = () => {
   return (
     <>
       <nav
-        className={`py-5 fixed top-0 left-0 right-0 z-20 ${
+        className={`py-4 fixed top-0 left-0 right-0 z-20 ${
           navBg ? "navbar-fixed" : ""
         }`}
       >
