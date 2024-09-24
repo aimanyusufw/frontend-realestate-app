@@ -3,7 +3,6 @@ import ServiceSection from "@/components/section/ServiceSection";
 import BrowsePropertiesSection from "@/components/section/BrowsePropertiesSection";
 import ContactUsSection from "@/components/section/ContactUsSection";
 import HeroSection from "@/components/section/HeroSection";
-import { fetchApi } from "@/libs/api-libs";
 
 export const metadata = {
   title: "Home | Horizon Homes",

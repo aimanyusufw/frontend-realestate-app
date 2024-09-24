@@ -46,7 +46,7 @@ const Specification = ({ specification }) => {
       <div className="flex items-baseline text-blue-500 mb-4">
         <IoMdRefresh className="w-5 h-5 me-3" />
         <span className="text-xs md:text-sm">
-          {specification.rent_period}/ Month {t("rentPeriod")}
+          {specification.rent_period} / {t("rentPeriod")}
         </span>
       </div>
       <div className="flex items-baseline text-blue-500 mb-4">

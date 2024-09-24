@@ -19,15 +19,15 @@ export const formatRupiahClientComp = (amount) => {
 
 export const formatRupiahServerComp = (amount) => {
   const units = [
-    { unit: "billion", divisor: 1_000_000_000, decimals: 2 },
-    { unit: "million", divisor: 1_000_000, decimals: 0 },
-    { unit: "thousand", divisor: 1_000, decimals: 2 },
+    { unit: "M", divisor: 1_000_000_000, decimals: 2 },
+    { unit: "JT", divisor: 1_000_000, decimals: 0 },
+    { unit: "K", divisor: 1_000, decimals: 2 },
     { unit: "", divisor: 1, decimals: 2 },
   ];
 
   for (const { unit, divisor, decimals } of units) {
     if (amount >= divisor) {
-      return ["IDR " + (amount / divisor).toFixed(decimals), unit];
+      return [(amount / divisor).toFixed(decimals), unit];
     }
   }
 };

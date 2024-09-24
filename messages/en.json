@@ -83,9 +83,9 @@
     "description": "Explore our diverse selection of properties and find the perfect home that suits your needs. Whether you're looking for a cozy apartment or a spacious house, we have options for every taste and budget. Start browsing now to discover your ideal property."
   },
   "currency": {
-    "billion": "Billion",
-    "million": "Million",
-    "thousand": "Thousand"
+    "billion": "B",
+    "million": "M",
+    "thousand": "K"
   },
   "contactUsSection": {
     "title": "Finding your perfect property is just a click away!",

@@ -83,9 +83,9 @@
     "email": "Surel"
   },
   "currency": {
-    "billion": "Miliar",
-    "million": "Juta",
-    "thousand": "Ribu"
+    "billion": "M",
+    "million": "JT",
+    "thousand": "K"
   },
   "contactUsSection": {
     "title": "Menemukan properti ideal Anda hanya dengan satu klik!",
