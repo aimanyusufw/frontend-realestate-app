@@ -78,9 +78,14 @@
     }
   },
   "agent": {
+    "agentProperties": "Properti Agent",
+    "description": "Deskripsi",
     "memberSince": "Anggota Sejak",
     "phone": "Telephone",
-    "email": "Surel"
+    "email": "Surel",
+    "totalProperties": "Total Properti",
+    "totalSold": "Total Terjual",
+    "avaragePrice": "Harga Kisaran"
   },
   "currency": {
     "billion": "M",
@@ -95,5 +100,13 @@
   "notfound": {
     "title": "Oops! Data Tidak Ditemukan",
     "description": "Kami tidak dapat menemukan apa yang Anda cari. Silakan periksa kembali permintaan Anda atau coba lagi nanti!"
+  },
+  "agentsPage": {
+    "title": "Agen Kami",
+    "description": "Temui tim agen profesional kami yang berdedikasi untuk membantu Anda menemukan properti impian. Dengan keahlian yang luas dan pemahaman mendalam tentang pasar, kami siap memberikan layanan terbaik untuk kebutuhan Anda."
+  },
+  "favoritesPage": {
+    "title": "Properti Favorit Anda",
+    "description": "Lihat daftar properti favorit Anda yang telah Anda simpan. Temukan properti yang paling sesuai dengan kebutuhan dan preferensi Anda, siap untuk langkah berikutnya."
   }
 }

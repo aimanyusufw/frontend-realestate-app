@@ -24,10 +24,10 @@ const AgentSmall = ({ agent }) => {
             <h1 className="text-xl md:text-2xl mb-1 font-medium">
               {agent.name}
             </h1>
+            <p className="text-xs md:text-sm text-slate-500">
+              {t("memberSince")} {agent.joined_date.year}
+            </p>
           </LocaleLink>
-          <p className="text-xs md:text-sm text-slate-500">
-            {t("memberSince")} {agent.joined_date.year}
-          </p>
         </div>
       </div>
       <Link

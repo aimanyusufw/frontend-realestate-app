@@ -3,6 +3,7 @@ import NotFound from "@/components/ui/NotFound";
 import { fetchApi } from "@/libs/api-libs";
 import { formatRupiahServerComp } from "@/libs/rupiahFormat";
 import parse from "html-react-parser";
+import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -10,6 +11,7 @@ import { FaInstagram, FaTiktok, FaXTwitter } from "react-icons/fa6";
 import { FiFacebook, FiLinkedin } from "react-icons/fi";
 
 const page = async ({ params }) => {
+  const t = await getTranslations("agent");
   const agent = await fetchApi(`agents/${params.id}`);
   const properties = await fetchApi(
     `properties`,
@@ -20,20 +22,23 @@ const page = async ({ params }) => {
     <section className="min-h-screen pt-32 pb-16">
       <div className="container">
         <div className="w-full px-2 flex items-center flex-col md:flex-row">
-          <div className="w-full md:w-[80%]">
-            <div className="flex flex-col md:flex-row items-center ">
+          <div className="w-full md:w-[80%] mb-10 lg:mb-0">
+            <div className="flex flex-col lg:flex-row items-center ">
               <Image
                 src={agent.data.profile_picture}
                 alt={agent.data.name}
                 width={200}
                 height={200}
-                className="rounded-md mb-5 md:mb-0"
+                className="rounded-full lg:rounded-md mb-5 lg:mb-0"
               />
               <div className="w-full ps-8">
                 <h1 className="font-medium text-2xl md:text-4xl mb-2 text-center md:text-start">
                   {agent.data.name}
                 </h1>
-                <div className="flex mb-2">
+                <p className="font-medium text-xs md:text-sm text-slate-500 text-center md:text-start">
+                  {t("memberSince")} {agent.data.joined_date.year}
+                </p>
+                <div className="flex mt-4">
                   {agent.data.social_media_links.instagram && (
                     <div className="pe-3">
                       <Link href={agent.data.social_media_links.instagram}>
@@ -70,13 +75,10 @@ const page = async ({ params }) => {
                     </div>
                   )}
                 </div>
-                <p className="font-medium text-xs md:text-sm text-slate-500 text-center md:text-start">
-                  Member Since {agent.data.joined_date.year}
-                </p>
                 <div className="max-w-xl grid grid-cols-3 gap-5 mt-5">
                   <div>
                     <h1 className="font-medium text-xs md:text-sm mb-3 text-center">
-                      Total Properties
+                      {t("totalProperties")}
                     </h1>
                     <h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl text-center">
                       {agent.data.total_property}
@@ -84,7 +86,7 @@ const page = async ({ params }) => {
                   </div>
                   <div>
                     <h1 className="font-medium text-xs md:text-sm mb-3 text-center">
-                      Total Sold
+                      {t("totalSold")}
                     </h1>
                     <h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl text-center">
                       {agent.data.total_sold_property}
@@ -92,7 +94,7 @@ const page = async ({ params }) => {
                   </div>
                   <div>
                     <h1 className="font-medium text-xs md:text-sm mb-3 text-center">
-                      Price Range
+                      {t("avaragePrice")}
                     </h1>
                     <h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl text-center">
                       {formatRupiahServerComp(agent.data.price_range_property)}
@@ -102,7 +104,7 @@ const page = async ({ params }) => {
               </div>
             </div>
             <article className="mt-5">
-              <h1 className="mb-2 font-medium text-lg">Description</h1>
+              <h1 className="mb-2 font-medium text-lg">{t("description")}</h1>
               {parse(agent.data.description)}
             </article>
           </div>
@@ -111,13 +113,13 @@ const page = async ({ params }) => {
               href={`tel:${agent.phone}`}
               className="w-full block bg-green-500 text-white rounded-md py-3 font-medium text-center mb-4"
             >
-              Phone
+              {t("phone")}
             </Link>
             <Link
               href={`mailto:${agent.email}`}
               className="w-full block border bg-white rounded-md py-3 font-medium text-center"
             >
-              Email
+              {t("email")}
             </Link>
           </div>
         </div>
@@ -128,7 +130,7 @@ const page = async ({ params }) => {
       <div className="container">
         <div className="w-full px-2 mb-5 md:mb-8">
           <h1 className="font-semibold text-3xl md:text-4xl">
-            Agent Properties
+            {t("agentProperties")}
           </h1>
         </div>
         {properties ? (

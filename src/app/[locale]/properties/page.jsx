@@ -79,21 +79,24 @@ const page = () => {
           <div className="px-2">
             <hr className="my-5" />
           </div>
-          {data.properties.data.length > 0 || data.properties.data === null ? (
-            <div className="px-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {data.properties.data.map((data) => (
-                <Property data={data} key={data.id} />
-              ))}
-            </div>
+          {data.properties?.data?.length > 0 ||
+          data.properties?.data === null ? (
+            <>
+              <div className="px-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {data.properties?.data?.map((data) => (
+                  <Property data={data} key={data.id} />
+                ))}
+              </div>
+              <Pagination
+                setPage={setPage}
+                page={page}
+                lastPage={data.properties?.meta?.last_page}
+              />
+            </>
           ) : (
             <NotFound />
           )}
         </div>
-        <Pagination
-          setPage={setPage}
-          page={page}
-          lastPage={data.properties?.meta?.last_page}
-        />
       </section>
       <ContactUsSection />
     </>

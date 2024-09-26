@@ -74,9 +74,14 @@
     }
   },
   "agent": {
+    "agentProperties": "Agent Properties",
+    "description": "Description",
     "memberSince": "Member Since",
     "phone": "Phone",
-    "email": "Email"
+    "email": "Email",
+    "totalProperties": "Total Properties",
+    "totalSold": "Total Sold",
+    "avaragePrice": "Avarage Price"
   },
   "browsePropertySection": {
     "title": "Browse Properties",
@@ -95,5 +100,13 @@
   "notfound": {
     "title": "Oops! Data Missing",
     "description": "We couldn't find what you're looking for. Please double-check your request or try again soon!"
+  },
+  "agentsPage": {
+    "title": "Our Agents",
+    "description": "Meet our team of dedicated professionals ready to help you find your dream property. With extensive expertise and deep market knowledge, we are committed to providing the best service for your needs."
+  },
+  "favoritesPage": {
+    "title": "Your Favorite Properties",
+    "description": "Explore your list of favorite properties you’ve saved. Find the ones that best match your needs and preferences, ready for the next step."
   }
 }

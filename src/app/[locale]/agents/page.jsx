@@ -2,9 +2,11 @@ import Agent from "@/components/cards/Agent";
 import ContactUsSection from "@/components/section/ContactUsSection";
 import NotFound from "@/components/ui/NotFound";
 import { fetchApi } from "@/libs/api-libs";
+import { getTranslations } from "next-intl/server";
 import React from "react";
 
 const page = async () => {
+  const t = await getTranslations("agentsPage");
   const agents = await fetchApi("agents");
 
   return (
@@ -13,12 +15,10 @@ const page = async () => {
         <div className="container">
           <div className="w-full px-2">
             <h1 className="font-semibold text-3xl md:text-4xl mb-4">
-              Our Agents
+              {t("title")}
             </h1>
             <p className="text-xs md:text-sm text-slate-500 max-w-md">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni
-              quasi ex sint rem earum animi consequuntur doloribus, autem
-              deserunt minus.
+              {t("description")}
             </p>
           </div>
           {agents.data.length > 1 ? (
