@@ -5,6 +5,7 @@ import "../globals.css";
 import Footer from "@/components/global/Footer";
 import Navigation from "@/components/global/Navigation";
 import NextTopLoader from "nextjs-toploader";
+import FavoriteProvider from "@/context/FavoriteProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,11 +21,13 @@ export default async function LocaleLayout({ children, params: { locale } }) {
     <html lang={locale}>
       <body className={inter.className}>
         <NextTopLoader showSpinner={false} />
-        <NextIntlClientProvider messages={messages}>
-          <Navigation />
-          {children}
-          <Footer />
-        </NextIntlClientProvider>
+        <FavoriteProvider>
+          <NextIntlClientProvider messages={messages}>
+            <Navigation />
+            {children}
+            <Footer />
+          </NextIntlClientProvider>
+        </FavoriteProvider>
       </body>
     </html>
   );

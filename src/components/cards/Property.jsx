@@ -1,30 +1,48 @@
+"use client";
+
+import useMyFavorites from "@/hooks/useMyFavorite";
 import { Link } from "@/i18n/routing";
 import { formatRupiahClientComp } from "@/libs/rupiahFormat";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 import { FaBath, FaBed, FaMapMarked } from "react-icons/fa";
+import { FaHeart, FaRegHeart } from "react-icons/fa6";
 import { IoIosExpand } from "react-icons/io";
 
 const Property = ({ data }) => {
   const t = useTranslations("property.specification");
 
+  const { handleButton, isFavorited } = useMyFavorites();
+
   return (
     <div className="border rounded-md overflow-hidden">
-      <Link href={`/properties/${data.slug}`}>
-        <div className="relative">
-          <div className="absolute bottom-4 left-4 px-4 py-2 font-medium text-sm bg-white rounded-md">
+      <div className="relative">
+        <div className="absolute bottom-4 left-4 flex gap-2 z-1">
+          <button
+            onClick={() => handleButton(data)}
+            className="px-3 py-2 font-medium text-sm bg-white rounded-md"
+          >
+            {isFavorited(data.slug) ? (
+              <FaHeart className="w-5 h-5 text-dark-green" />
+            ) : (
+              <FaRegHeart className="w-5 h-5" />
+            )}
+          </button>
+          <div className="px-4 py-2 font-medium text-sm bg-white rounded-md">
             {data.type.name}
           </div>
+        </div>
+        <Link href={`/properties/${data.slug}`}>
           <Image
             src={data.thumbnail}
             alt={data.slug}
             width={200}
             height={100}
-            className="w-full h-full"
+            className="w-full h-full bg-cover"
           />
-        </div>
-      </Link>
+        </Link>
+      </div>
       <div className="p-4">
         <div className="flex items-center mb-3 text-blue-500">
           <FaMapMarked />
