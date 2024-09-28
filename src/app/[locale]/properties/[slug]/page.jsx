@@ -10,6 +10,7 @@ import parse from "html-react-parser";
 import ContactUsSection from "@/components/section/ContactUsSection";
 import Property from "@/components/cards/Property";
 import NotFound from "@/components/ui/NotFound";
+import AddToFavorite from "@/components/buttons/AddToFavorite";
 
 const page = async ({ params: { slug } }) => {
   const t = await getTranslations();
@@ -49,7 +50,7 @@ const page = async ({ params: { slug } }) => {
           </div>
           <div className="w-full flex flex-wrap">
             <div className="w-full md:w-[70%] px-2 mb-5">
-              <h1 className="font-semibold text-3xl md:text-4xl text-blue-500 mb-4">
+              <h1 className="font-semibold text-4xl md:text-5xl text-blue-500 mb-4">
                 {property.data.price.string}
               </h1>
               <h1 className="font-semibold text-4xl md:text-5xl mb-3">
@@ -63,6 +64,9 @@ const page = async ({ params: { slug } }) => {
                 <span className="ms-2">
                   {property.data.location.name}, Indonesia
                 </span>
+              </div>
+              <div className="mt-4">
+                <AddToFavorite data={property.data} />
               </div>
               <div className="flex flex-col md:flex-row mt-10">
                 <div className="w-full mb-8 md:mb-0 pe-0 md:pe-4">

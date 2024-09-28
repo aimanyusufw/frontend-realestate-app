@@ -108,5 +108,9 @@
   "favoritesPage": {
     "title": "Your Favorite Properties",
     "description": "Explore your list of favorite properties you’ve saved. Find the ones that best match your needs and preferences, ready for the next step."
+  },
+  "favoritesToast": {
+    "add": "Success add to favorites",
+    "remove": "Success remove from favorites"
   }
 }

@@ -108,5 +108,9 @@
   "favoritesPage": {
     "title": "Properti Favorit Anda",
     "description": "Lihat daftar properti favorit Anda yang telah Anda simpan. Temukan properti yang paling sesuai dengan kebutuhan dan preferensi Anda, siap untuk langkah berikutnya."
+  },
+  "favoritesToast": {
+    "add": "Berhasil menambahkan ke favorit",
+    "remove": "Berhasil menghapus dari favorit"
   }
 }

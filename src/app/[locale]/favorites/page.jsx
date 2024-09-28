@@ -22,7 +22,7 @@ const page = () => {
             {t("description")}
           </p>
         </div>
-        {myFavorites ? (
+        {myFavorites.length > 0 ? (
           <div className="px-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
             {myFavorites.map((data) => (
               <Property data={data} key={data.slug} />

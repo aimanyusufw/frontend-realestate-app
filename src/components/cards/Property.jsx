@@ -24,9 +24,9 @@ const Property = ({ data }) => {
             className="px-3 py-2 font-medium text-sm bg-white rounded-md"
           >
             {isFavorited(data.slug) ? (
-              <FaHeart className="w-5 h-5 text-dark-green" />
+              <FaHeart className="w-4 h-4 text-dark-green" />
             ) : (
-              <FaRegHeart className="w-5 h-5" />
+              <FaRegHeart className="w-4 h-4" />
             )}
           </button>
           <div className="px-4 py-2 font-medium text-sm bg-white rounded-md">

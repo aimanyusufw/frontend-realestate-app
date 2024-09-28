@@ -6,6 +6,7 @@ import Footer from "@/components/global/Footer";
 import Navigation from "@/components/global/Navigation";
 import NextTopLoader from "nextjs-toploader";
 import FavoriteProvider from "@/context/FavoriteProvider";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default async function LocaleLayout({ children, params: { locale } }) {
     <html lang={locale}>
       <body className={inter.className}>
         <NextTopLoader showSpinner={false} />
+        <Toaster position="top-left" />
         <FavoriteProvider>
           <NextIntlClientProvider messages={messages}>
             <Navigation />
