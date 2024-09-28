@@ -11,7 +11,7 @@ import { fetchApi } from "@/libs/api-libs";
 import { useSearchParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
-const page = () => {
+const Page = () => {
   const params = useSearchParams();
   const [page, setPage] = useState(1);
   const [data, setData] = useState({
@@ -103,4 +103,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

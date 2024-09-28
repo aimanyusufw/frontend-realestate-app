@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 
-export const formatRupiahClientComp = (amount) => {
+export const FormatRupiahClientComp = (amount) => {
   const t = useTranslations("currency");
 
   const units = [
@@ -17,7 +17,7 @@ export const formatRupiahClientComp = (amount) => {
   }
 };
 
-export const formatRupiahServerComp = (amount) => {
+export const FormatRupiahServerComp = (amount) => {
   const units = [
     { unit: "M", divisor: 1_000_000_000, decimals: 2 },
     { unit: "JT", divisor: 1_000_000, decimals: 0 },

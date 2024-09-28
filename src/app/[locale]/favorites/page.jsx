@@ -6,7 +6,7 @@ import useMyFavorites from "@/hooks/useMyFavorite";
 import { useTranslations } from "next-intl";
 import React from "react";
 
-const page = () => {
+const Page = () => {
   const t = useTranslations("favoritesPage");
 
   const { myFavorites } = useMyFavorites();
@@ -36,4 +36,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
