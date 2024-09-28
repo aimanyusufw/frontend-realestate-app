@@ -1,5 +1,5 @@
 import { Link } from "@/i18n/routing";
-import { formatRupiahServerComp } from "@/libs/rupiahFormat";
+import { FormatRupiahServerComp } from "@/libs/rupiahFormat";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
@@ -49,7 +49,7 @@ const Agent = ({ data }) => {
               {t("avaragePrice")}
             </h1>
             <h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl text-center">
-              {formatRupiahServerComp(data.price_range_property)}
+              {FormatRupiahServerComp(data.price_range_property)}
             </h2>
           </div>
         </div>

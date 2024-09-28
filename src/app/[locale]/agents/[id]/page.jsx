@@ -1,7 +1,7 @@
 import Property from "@/components/cards/Property";
 import NotFound from "@/components/ui/NotFound";
 import { fetchApi } from "@/libs/api-libs";
-import { formatRupiahServerComp } from "@/libs/rupiahFormat";
+import { FormatRupiahServerComp } from "@/libs/rupiahFormat";
 import parse from "html-react-parser";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
@@ -97,7 +97,7 @@ const page = async ({ params }) => {
                       {t("avaragePrice")}
                     </h1>
                     <h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl text-center">
-                      {formatRupiahServerComp(agent.data.price_range_property)}
+                      {FormatRupiahServerComp(agent.data.price_range_property)}
                     </h2>
                   </div>
                 </div>

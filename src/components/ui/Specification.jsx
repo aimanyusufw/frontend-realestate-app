@@ -4,7 +4,7 @@ import { FaBath, FaBed } from "react-icons/fa";
 import { FaHouse } from "react-icons/fa6";
 import { IoIosExpand, IoMdRefresh } from "react-icons/io";
 import { GiElectric } from "react-icons/gi";
-import { formatRupiahServerComp } from "@/libs/rupiahFormat";
+import { FormatRupiahServerComp } from "@/libs/rupiahFormat";
 import { TbArrowAutofitWidth, TbCertificate } from "react-icons/tb";
 
 const Specification = ({ specification }) => {
@@ -52,7 +52,7 @@ const Specification = ({ specification }) => {
       <div className="flex items-baseline text-blue-500 mb-4">
         <TbArrowAutofitWidth className="w-5 h-5 me-3" />
         <span className="text-xs md:text-sm">
-          {formatRupiahServerComp(specification.price_per_m2)} {t("pricePerM2")}
+          {FormatRupiahServerComp(specification.price_per_m2)} {t("pricePerM2")}
         </span>
       </div>
       <div className="flex items-baseline text-blue-500 mb-4">
