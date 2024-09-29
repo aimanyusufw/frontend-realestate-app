@@ -16,8 +16,8 @@ const FiltersType = ({ filters, typeProperties, loadings }) => {
   };
 
   return (
-    <div>
-      <div className="flex gap-4">
+    <div className="max-w-full">
+      <div className="flex gap-4 overflow-x-scroll">
         <button
           onClick={() => handleButton("")}
           className={`${
@@ -36,9 +36,11 @@ const FiltersType = ({ filters, typeProperties, loadings }) => {
             href={`?type=${data.slug}`}
             onClick={() => handleButton(data.slug)}
             key={data.slug}
-            className={`${
-              filters.type === data.slug && "bg-dark-green text-white"
-            } px-4 py-2 rounded-md text-sm font-medium border`}
+            className={`px-4 py-2 rounded-md text-sm font-medium border whitespace-nowrap flex-shrink-0 ${
+              filters.type === data.slug
+                ? "bg-dark-green text-nowrap text-white"
+                : ""
+            }`}
           >
             {data.name}
           </button>
