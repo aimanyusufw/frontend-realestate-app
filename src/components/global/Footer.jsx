@@ -50,25 +50,29 @@ const Footer = async () => {
               </h1>
               <div className="flex flex-col gap-4">
                 <Link
-                  href={"/"}
+                  href={"https://instagram.com/aimanyw_"}
                   className="text-sm md:text-base hover:underline"
                 >
                   Instagram
                 </Link>
                 <Link
-                  href={"/properties"}
+                  href={
+                    "https://www.facebook.com/profile.php?id=61554416981074"
+                  }
                   className="text-sm md:text-base hover:underline"
                 >
                   Facebook
                 </Link>
                 <Link
-                  href={"/agents"}
+                  href={
+                    "https://linkedin.com/in/aiman-yusuf-wicaksono-96026a316"
+                  }
                   className="text-sm md:text-base hover:underline"
                 >
                   Linkedin
                 </Link>
                 <Link
-                  href={"/favorites"}
+                  href={"https://twitter.com/aimanyus_"}
                   className="text-sm md:text-base hover:underline"
                 >
                   Twitter

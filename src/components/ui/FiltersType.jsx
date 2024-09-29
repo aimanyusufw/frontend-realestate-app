@@ -17,7 +17,7 @@ const FiltersType = ({ filters, typeProperties, loadings }) => {
 
   return (
     <div className="max-w-full">
-      <div className="flex gap-4 overflow-x-scroll">
+      <div className="flex gap-4 overflow-x-auto">
         <button
           onClick={() => handleButton("")}
           className={`${

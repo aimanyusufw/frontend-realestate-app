@@ -90,7 +90,7 @@ const ServiceSection = () => {
                 isOpen={accordionOpen === index}
                 setIsOpen={handleButton}
                 index={index}
-                key={index}
+                key={data}
               />
             ))}
           </div>

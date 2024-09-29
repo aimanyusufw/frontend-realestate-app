@@ -28,6 +28,7 @@ const page = async ({ params: { slug } }) => {
                 src={property.data.thumbnail}
                 alt={slug}
                 width={1600}
+                priority
                 height={900}
                 className="w-full h-full rounded-md object-cover"
               />
@@ -40,7 +41,7 @@ const page = async ({ params: { slug } }) => {
                   alt={`${slug} ${index}`}
                   width={160}
                   height={90}
-                  className="rounded-md w-full md:w-auto max-w-[160px] md:max-w-none object-cover"
+                  className="rounded-md w-full md:w-auto max-w-full md:max-w-none object-cover"
                 />
               ))}
             </div>

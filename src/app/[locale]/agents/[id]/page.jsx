@@ -38,7 +38,7 @@ const page = async ({ params }) => {
                 <p className="font-medium text-xs md:text-sm text-slate-500 text-center md:text-start">
                   {t("memberSince")} {agent.data.joined_date.year}
                 </p>
-                <div className="flex mt-4">
+                <div className="flex justify-center md:justify-start mt-4">
                   {agent.data.social_media_links.instagram && (
                     <div className="pe-3">
                       <Link

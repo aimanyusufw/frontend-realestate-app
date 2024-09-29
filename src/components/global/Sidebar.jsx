@@ -10,7 +10,7 @@ const Sidebar = ({ isOpen, handleMenu }) => {
     <>
       <aside
         id="sidebar-responsive"
-        className={`fixed top-0 right-0 z-50 w-64 h-screen transition-transform sm:hidden ${
+        className={`fixed top-0 right-0 z-[100] w-64 h-screen transition-transform sm:hidden ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
         aria-label="Sidebar"
@@ -71,7 +71,7 @@ const Sidebar = ({ isOpen, handleMenu }) => {
 
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 z-[45]"
+          className="fixed inset-0 bg-black bg-opacity-50 z-[99]"
           aria-hidden="true"
           onClick={handleMenu}
         ></div>
