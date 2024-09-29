@@ -41,35 +41,50 @@ const page = async ({ params }) => {
                 <div className="flex mt-4">
                   {agent.data.social_media_links.instagram && (
                     <div className="pe-3">
-                      <Link href={agent.data.social_media_links.instagram}>
+                      <Link
+                        target="_blank"
+                        href={agent.data.social_media_links.instagram}
+                      >
                         <FaInstagram className="w-6 h-6 text-dark-green" />
                       </Link>
                     </div>
                   )}
                   {agent.data.social_media_links.linkedin && (
                     <div className="pe-3">
-                      <Link href={agent.data.social_media_links.linkedin}>
+                      <Link
+                        target="_blank"
+                        href={agent.data.social_media_links.linkedin}
+                      >
                         <FiLinkedin className="w-6 h-6 text-dark-green" />
                       </Link>
                     </div>
                   )}
                   {agent.data.social_media_links.tiktok && (
                     <div className="pe-3">
-                      <Link href={agent.data.social_media_links.tiktok}>
+                      <Link
+                        target="_blank"
+                        href={agent.data.social_media_links.tiktok}
+                      >
                         <FaTiktok className="w-6 h-6 text-dark-green" />
                       </Link>
                     </div>
                   )}
                   {agent.data.social_media_links.twitter && (
                     <div className="pe-3">
-                      <Link href={agent.data.social_media_links.twitter}>
+                      <Link
+                        target="_blank"
+                        href={agent.data.social_media_links.twitter}
+                      >
                         <FaXTwitter className="w-6 h-6 text-dark-green" />
                       </Link>
                     </div>
                   )}
                   {agent.data.social_media_links.facebook && (
                     <div className="pe-3">
-                      <Link href={agent.data.social_media_links.facebook}>
+                      <Link
+                        target="_blank"
+                        href={agent.data.social_media_links.facebook}
+                      >
                         <FiFacebook className="w-6 h-6 text-dark-green" />
                       </Link>
                     </div>

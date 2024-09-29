@@ -74,7 +74,7 @@
     }
   },
   "agent": {
-    "agentProperties": "Agent Properties",
+    "agentProperties": "Agents Properties",
     "description": "Description",
     "memberSince": "Member Since",
     "phone": "Phone",

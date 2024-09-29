@@ -52,7 +52,7 @@ const Property = ({ data }) => {
           {FormatRupiahClientComp(data.price.int)}
         </h1>
         <Link href={`/properties/${data.slug}`}>
-          <h2 className="font-semibold text-2xl md:text-3xl mb-2 truncate">
+          <h2 className="font-semibold capitalize text-2xl md:text-3xl mb-2 truncate">
             {data.title}
           </h2>
         </Link>
