@@ -29,4 +29,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
         env:
-        NEXT_PUBLIC_API_URL: ${{ secrets.ENV_API_URL }}
+          NEXT_PUBLIC_API_URL: ${{ secrets.ENV_API_URL }}
