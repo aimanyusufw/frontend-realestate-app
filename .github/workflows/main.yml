@@ -16,6 +16,10 @@ jobs:
         with:
           node-version: "21"
 
+      - name: 📄 Create .env file
+        run: |
+          echo "NEXT_PUBLIC_API_URL=${{ secrets.ENV_API_URL }}" >> .env
+
       - name: Install NPM dependencies
         run: npm install
 
@@ -28,5 +32,3 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-        env:
-          NEXT_PUBLIC_API_URL: ${{ secrets.ENV_API_URL }}
